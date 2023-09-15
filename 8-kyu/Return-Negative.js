@@ -13,7 +13,7 @@ Notes
     Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
 */
 
-const makeNegative = num => num * -1
+const makeNegative = (num) => Math.abs(num) * -1
 
 console.log(makeNegative(1))
 console.log(makeNegative(10))
