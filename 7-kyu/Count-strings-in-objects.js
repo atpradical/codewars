@@ -32,4 +32,5 @@ function strCount(object) {
     }
     return counter;
 }
+
 console.log(strCount(object));
