@@ -11,7 +11,7 @@ Examples(Operator, value1, value2) --> output
 ('/', 49, 7) --> 7
 */
 
-function basicOp(operation, value1, value2) {
+/*function basicOp(operation, value1, value2) {
     switch (operation) {
         case '+':
             return value1 + value2
@@ -22,4 +22,8 @@ function basicOp(operation, value1, value2) {
         case '/':
             return value1 / value2
     }
-}
+}*/
+
+const basicOp = (operation, value1, value2) => eval(value1 + operation + value2)
+
+
