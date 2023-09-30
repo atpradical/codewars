@@ -12,7 +12,7 @@ Examples (input -> output)
 "ACSKLDFJSGSKLDFJSKLDFJ" -> True
 In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS.
 */
-function foo1(string) {
+/*function foo1(string) {
     const array = this.split('')
 
     for (let i = 0; i < array.length; i++) {
@@ -23,4 +23,6 @@ function foo1(string) {
     return true
 }
 
-console.log(foo1('hello I AM DONALD'))
+console.log(foo1('hello I AM DONALD'))*/
+
+String.prototype.isUpperCase=function() {return this==this.toUpperCase()}
