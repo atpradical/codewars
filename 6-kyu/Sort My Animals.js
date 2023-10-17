@@ -25,9 +25,8 @@ function sortAnimal(animals) {
     let result = animals.map(el=>el)
 
     return result.sort((a, b) => {
-        if (a.numberOfLegs !== b.numberOfLegs) {
-            return a.numberOfLegs - b.numberOfLegs;
-        }
+        if (a.numberOfLegs > b.numberOfLegs) return 1
+        if (a.numberOfLegs < b.numberOfLegs) return -1
         if (a.name < b.name) return -1;
         if (a.name > b.name) return 1;
         return 0;
