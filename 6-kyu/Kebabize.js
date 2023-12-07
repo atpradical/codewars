@@ -9,5 +9,5 @@ Notes:
 the returned string should only contain lowercase letters
 * */
 
-const kebabize = (str) => str.replace(/[^a-z]/ig, '').split(/(?=[A-Z])/).map(el => el.toLowerCase()).join('-')
-console.log(kebabize('MyCamelCasedString'))
+// const kebabize = (str) => str.replace(/[^a-z]/ig, '').split(/(?=[A-Z])/).map(el => el.toLowerCase()).join('-')
+// console.log(kebabize('MyCamelCasedString'))
